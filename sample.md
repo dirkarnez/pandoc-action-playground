@@ -38,3 +38,6 @@ You can run it yourself like this:
 - [Rocket - a web framework for Rust](https://rocket.rs)
 - [Pandoc - a universal document converter](https://pandoc.org)
 - [Codemirror - a text editor for the browser](https://codemirror.net)
+
+### Math
+This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
