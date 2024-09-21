@@ -9,12 +9,15 @@ jobs:
   pandoc:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    container:
-      image: pandoc/latex
     steps:
       - uses: actions/checkout@v4
       
-      - run: pandoc sample.md --pdf-engine=xelatex -o sample.pdf
+      - shell: bash
+        run: |
+          docker run --rm \
+          --volume "$(pwd):/data" \
+          --user $(id -u):$(id -g) \
+          pandoc/latex sample.md --pdf-engine=xelatex -o sample.pdf
 
       - run: ls
       
