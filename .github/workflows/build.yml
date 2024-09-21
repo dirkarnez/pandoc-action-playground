@@ -16,6 +16,8 @@ jobs:
       
       - run: pandoc sample.md --pdf-engine=xelatex -o sample.pdf
 
+      - run: ls
+      
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
           add: sample.pdf
