@@ -16,14 +16,10 @@ jobs:
       - shell: bash
         run: |
           docker run --rm \
+          --entrypoint /data/entrypoint.sh \
           --volume "$(pwd):/data" \
           --user $(id -u):$(id -g) \
-          pandoc/latex sample.md \
-          -V linkcolor:blue \
-          -V geometry:a4paper \
-          -V geometry:margin=2cm \
-          --pdf-engine=xelatex \
-          -o sample.pdf
+          pandoc/latex
           
       - run: ls
       
