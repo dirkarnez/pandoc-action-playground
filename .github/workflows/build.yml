@@ -17,8 +17,15 @@ jobs:
           docker run --rm \
           --volume "$(pwd):/data" \
           --user $(id -u):$(id -g) \
-          pandoc/latex sample.md --pdf-engine=xelatex -o sample.pdf
-
+          pandoc/latex sample.md \
+          -V linkcolor:blue \
+          -V geometry:a4paper \
+          -V geometry:margin=2cm \
+          -V mainfont="DejaVu Serif" \
+          -V monofont="DejaVu Sans Mono" \
+          --pdf-engine=xelatex \
+          -o sample.pdf
+          
       - run: ls
       
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
