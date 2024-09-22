@@ -18,10 +18,10 @@ jobs:
         run: |
           sudo chmod -R +x . && \
           docker run --rm \
-          --entrypoint entrypoint.sh \
+          --entrypoint /bin/bash \
           --volume "$(pwd):/data" \
           --user $(id -u):$(id -g) \
-          pandoc/latex
+          pandoc/latex entrypoint.sh
           
       - run: ls
       
