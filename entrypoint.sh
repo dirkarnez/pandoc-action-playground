@@ -1,6 +1,7 @@
 #!/bin/bash
 
-apt-get install -y fonts-dejavu
+apt-get install -y fonts-dejav \
+  ttf-mscorefonts-installer
 
 cd /data && \
 /usr/local/bin/pandoc sample.md \
@@ -8,7 +9,7 @@ cd /data && \
 -V geometry:a4paper \
 -V geometry:margin=2cm \
 -V fontsize=12pt \
--V mainfont="DejaVu Serif" \
+-V mainfont="Times New Roman" \
 -V monofont="DejaVu Sans Mono" \
 --pdf-engine=xelatex \
 -o sample.pdf
