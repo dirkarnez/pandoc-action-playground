@@ -11,15 +11,12 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-
+      
+      # https://github.com/learnbyexample/learnbyexample.github.io/tree/master/files/pandoc_pdf
       - name: set permission and run
+        shell: bash
         run: |
           sudo chmod -R +x . && \
-          ./entrypoint.sh
-          
-      # https://github.com/learnbyexample/learnbyexample.github.io/tree/master/files/pandoc_pdf
-      - shell: bash
-        run: |
           docker run --rm \
           --entrypoint /data/entrypoint.sh \
           --volume "$(pwd):/data" \
