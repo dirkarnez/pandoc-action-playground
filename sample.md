@@ -32,7 +32,7 @@ curl --data-urlencode "markdown=$(cat example.md)"
 
 ## Deploy
 
-A prebuilt container image is available at [Docker Hub](https://hub.docker.com/r/spawnia/md-to-pdf).
+A prebuilt container image is available at [Docker Hub](https://hub.docker.com/r/spawnia/md-to-pdf){target="blank"}.
 You can run it yourself like this:
 
     docker run --publish=8000:8000 spawnia/md-to-pdf

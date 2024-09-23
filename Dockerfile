@@ -15,8 +15,10 @@ RUN apt-get update && \
     librsvg2-bin \
     texlive-science \
     fontconfig && \
-    fc-cache -f -v && \
-    tlmgr install fancyvrb && \
+    fc-cache -f -v
+
+RUN tlmgr install fancyvrb && \
     tlmgr install newverbs && \
-    tlmgr install xcolor
+    tlmgr install xcolor && \
+    tlmgr install sectsty
     

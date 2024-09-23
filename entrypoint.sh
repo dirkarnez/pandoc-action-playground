@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# --include-in-header chapter_break.tex \
-# --include-in-header inline_code.tex \
 cd /data && \
 /usr/local/bin/pandoc sample.md \
+--include-in-header chapter_break.tex \
 --include-in-header inline_code.tex \
 --highlight-style pygments.theme \
 -V linkcolor:blue \
