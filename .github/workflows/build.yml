@@ -18,12 +18,11 @@ jobs:
         shell: bash
         run: |
           sudo chmod -R +x . && \
-          docker build -t my-pandoc . && \
           docker run --rm \
           --entrypoint /bin/sh \
           --volume "$(pwd):/data" \
           --user $(id -u):$(id -g) \
-          my-pandoc entrypoint.sh
+          ${{ secrets.DOCKERHUB_USERNAME }}/my-pandoc:202409231519 entrypoint.sh
           
       - run: ls
       
