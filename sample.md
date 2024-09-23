@@ -31,10 +31,10 @@ curl --data-urlencode "markdown=$(cat example.md)"
 ```
 
 ## Deploy
-A prebuilt container image is available at [Docker Hub](https://hub.docker.com/r/spawnia/md-to-pdf){target="_blank"}.
-You can run it yourself like this:
+Too long, will overeflow, need split to next line
 ```bash
-docker-compose --file docker-compose.dev.yml up --build && docker-compose --file docker-compose.dev.yml down
+docker-compose --file docker-compose.dev.yml up --build && \
+docker-compose --file docker-compose.dev.yml down
 ```
 ## Built with
 
