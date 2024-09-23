@@ -17,11 +17,12 @@ jobs:
         shell: bash
         run: |
           sudo chmod -R +x . && \
-          docker run --rm \
+          docker build -t my-pandoc . && \
+          docker run --rm -it \
           --entrypoint /bin/sh \
           --volume "$(pwd):/data" \
           --user $(id -u):$(id -g) \
-          pandoc/latex:edge-ubuntu entrypoint.sh
+          my-pandoc entrypoint.sh
           
       - run: ls
       
