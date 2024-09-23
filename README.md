@@ -9,4 +9,5 @@ Use [md-to-pdf](https://md-to-pdf.fly.dev/) for instant preview
 - [tlmgr - the native TeX Live Manager](https://www.tug.org/texlive/doc/tlmgr.html)
 
 ### Tutorials
-- [learnbyexample.github.io/files/pandoc_pdf/sample_2.md at master · learnbyexample/learnbyexample.github.io](https://github.com/learnbyexample/learnbyexample.github.io/blob/master/files/pandoc_pdf/sample_2.md)
+- [Customizing pandoc to generate beautiful pdf and epub from markdown](https://learnbyexample.github.io/customizing-pandoc/)
+    - [learnbyexample.github.io/files/pandoc_pdf/sample_2.md at master · learnbyexample/learnbyexample.github.io](https://github.com/learnbyexample/learnbyexample.github.io/blob/master/files/pandoc_pdf/sample_2.md)

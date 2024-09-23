@@ -13,6 +13,3 @@ cd /data && \
 -V monofont="DejaVu Sans Mono" \
 --pdf-engine=xelatex \
 -o sample.pdf
-
-# 
-# 
