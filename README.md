@@ -2,6 +2,9 @@ pandoc-action-playground
 ========================
 Use [md-to-pdf](https://md-to-pdf.fly.dev/) for instant preview
 
+### Notes
+- It seems PDF does not support open links in new tab
+ 
 ### Using
 - [pandoc/latex - Docker Image | Docker Hub](https://hub.docker.com/r/pandoc/latex)
 
