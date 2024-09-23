@@ -10,8 +10,13 @@ RUN apt-get update && \
     echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections && \
     apt-get -y --no-install-recommends --allow-unauthenticated install \
     ttf-mscorefonts-installer \
+    fonts-dejavu \
     texlive-xetex \
     librsvg2-bin \
     texlive-science \
     fontconfig && \
-    fc-cache -f -v
+    fc-cache -f -v && \
+    tlmgr install fancyvrb && \
+    tlmgr install newverbs && \
+    tlmgr install xcolor
+    

@@ -13,10 +13,12 @@ If you need guaranteed availability, [deploy it yourself](#deploy).
 ## API
 
 You can convert markdown by sending a `POST` request to `https://md-to-pdf.fly.dev`.
-```
-curl --data-urlencode 'markdown=# Heading 1' --output md-to-pdf.pdf https://md-to-pdf.fly.dev
-```
+```python
+# sample comment: a/b != a\b
 
+>>> 2 ** 5
+32
+```
 | Parameter  | Required | Description                                                                                           |
 |------------|----------|-------------------------------------------------------------------------------------------------------|
 | `markdown` | Required | The markdown content to convert                                                                       |
@@ -24,8 +26,9 @@ curl --data-urlencode 'markdown=# Heading 1' --output md-to-pdf.pdf https://md-t
 | `engine`   | Optional | The PDF conversion engine, can be `weasyprint`, `wkhtmltopdf` or `pdflatex`, defaults to `weasyprint` |
 
 Send data from files like this:
-
-    curl --data-urlencode "markdown=$(cat example.md)"
+```bash
+curl --data-urlencode "markdown=$(cat example.md)"
+```
 
 ## Deploy
 
