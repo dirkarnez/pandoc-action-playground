@@ -24,7 +24,7 @@ jobs:
           --entrypoint /bin/sh \
           --volume "$(pwd):/data" \
           --user $(id -u):$(id -g) \
-          ${{ secrets.DOCKERHUB_USERNAME }}/my-pandoc:202409231519 entrypoint.sh
+          ${{ secrets.DOCKERHUB_USERNAME }}/my-pandoc:202409232032 entrypoint.sh
           
       - run: ls
       
