@@ -2,8 +2,8 @@ name: build
 on:
   push:
     paths-ignore:
-      - '**/README.md'
-
+      - 'README.md'
+      
 permissions:
     contents: write
     
