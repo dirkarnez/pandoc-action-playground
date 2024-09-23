@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# --include-in-header href_new_tab.tex \
+
 cd /data && \
 /usr/local/bin/pandoc sample.md \
 --include-in-header chapter_break.tex \
