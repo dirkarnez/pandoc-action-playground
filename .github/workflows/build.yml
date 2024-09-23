@@ -13,12 +13,13 @@ jobs:
       - uses: actions/checkout@v4
       
       # https://github.com/learnbyexample/learnbyexample.github.io/tree/master/files/pandoc_pdf
+      # docker run must not have -it on GitHub CICD
       - name: set permission and run
         shell: bash
         run: |
           sudo chmod -R +x . && \
           docker build -t my-pandoc . && \
-          docker run --rm -it \
+          docker run --rm \
           --entrypoint /bin/sh \
           --volume "$(pwd):/data" \
           --user $(id -u):$(id -g) \
