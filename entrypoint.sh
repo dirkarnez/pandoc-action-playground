@@ -12,6 +12,6 @@ cd /data && \
 -V geometry:margin=2cm \
 -V fontsize=12pt \
 -V mainfont="Times New Roman" \
--V monofont="consolas" \
+-V monofont="YaHei Consolas Hybrid" \
 --pdf-engine=xelatex \
 -o sample.pdf
