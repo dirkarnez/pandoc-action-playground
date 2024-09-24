@@ -21,6 +21,5 @@ RUN apt-get update && \
 RUN tlmgr install fancyvrb && \
     tlmgr install newverbs && \
     tlmgr install xcolor && \
-    tlmgr install sectsty && \
-    tlmgr install hyperref
+    tlmgr install sectsty
     
