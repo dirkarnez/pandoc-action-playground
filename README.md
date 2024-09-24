@@ -17,3 +17,4 @@ Use [md-to-pdf](https://md-to-pdf.fly.dev/) for instant preview
 ### Tutorials
 - [Customizing pandoc to generate beautiful pdf and epub from markdown](https://learnbyexample.github.io/customizing-pandoc/)
     - [learnbyexample.github.io/files/pandoc_pdf/sample_2.md at master · learnbyexample/learnbyexample.github.io](https://github.com/learnbyexample/learnbyexample.github.io/blob/master/files/pandoc_pdf/sample_2.md)
+- [How To Install Windows Fonts on Ubuntu | Documentation](https://docs.groupdocs.com/viewer/java/how-to-install-windows-fonts-on-ubuntu/)
